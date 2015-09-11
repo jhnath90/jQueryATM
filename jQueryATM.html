@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery ATM</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="jQueryATM.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+
+</head>
+<body>
+<div class="row">
+	<div class="col s12 m12">
+		<div class="card-panel teal">
+			<span class="white-text">
+				<h2>jQuery ATM</h2>
+				<p>Enter the amounts for Checking deposit or withdraw, or click below for your balance.</p>
+				<div>
+					Check Balances <button id="balance" type="button" class="btn-floating waves-light green">$</button>
+				</div>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="panel">
+	<table class="responsive-table">
+		<thead>
+			<tr>
+				
+				<td>Deposits</td>
+				<td>Withdraw</td>
+				<td>Xfer to Checking</td>
+				<td>Xfer to Savings</td>
+			</tr>
+
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<input type="number" id="d_amount">
+					<button id="deposit" type="button" class="btn waves-light">Deposit</button>
+				</td>
+				<td>
+					<input type="number" id="w_amount">
+					<button id="withdraw" type="button" class="btn waves-light">Withdraw</button>
+				</td>
+				<td>
+					<input type="number" id="x2c_amount">
+					<button id="x2check" type="button" class="btn waves-light">Xfer to Checking</button>
+				</td>
+				<td>
+					<input type="number" id="x2s_amount">
+					<button id="x2save" type="button" class="btn waves-light">Xfer to Savings</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4"><p id="message"></p></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
+</body>
+</html>
